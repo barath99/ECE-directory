@@ -20,15 +20,15 @@
 if(localStorage.getItem('count')==null){
   localStorage.setItem('count',0);
 }
-firebase.initializeApp({
-  apiKey: "AIzaSyCUhgTOrDeKB4A0eLBEu6udv6u8a2cVdWg",
-  authDomain: "ece-directory.firebaseapp.com",
-  projectId: "ece-directory"
-});
+
 
 function validate(){
   
-  
+  firebase.initializeApp({
+    apiKey: "AIzaSyCUhgTOrDeKB4A0eLBEu6udv6u8a2cVdWg",
+    authDomain: "ece-directory.firebaseapp.com",
+    projectId: "ece-directory"
+  });
   var db = firebase.firestore();
   // var passcode = document.getElementById('passcode').value;
   // if(passcode=="Kudos#Hacker:P"){
