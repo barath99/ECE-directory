@@ -24,11 +24,11 @@ if(localStorage.getItem('count')==null){
 
 function validate(){
   
-  firebase.initializeApp({
-    apiKey: "AIzaSyCUhgTOrDeKB4A0eLBEu6udv6u8a2cVdWg",
-    authDomain: "ece-directory.firebaseapp.com",
-    projectId: "ece-directory"
-  });
+  // firebase.initializeApp({
+  //   apiKey: "AIzaSyCUhgTOrDeKB4A0eLBEu6udv6u8a2cVdWg",
+  //   authDomain: "ece-directory.firebaseapp.com",
+  //   projectId: "ece-directory"
+  // });
   var db = firebase.firestore();
   // var passcode = document.getElementById('passcode').value;
   // if(passcode=="Kudos#Hacker:P"){
@@ -42,9 +42,7 @@ function validate(){
   // }
   // }
   db.collection("Basics").add({
-    first: "Ada",
-    last: "Lodelace",
-    born: 1815
+    attempt : "+1"
 })
 .then(function(docRef) {
   console.log("Document written with ID: ", docRef.id);
